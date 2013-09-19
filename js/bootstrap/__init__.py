@@ -5,10 +5,10 @@ library = Library('bootstrap', 'resources')
 
 bootstrap_css = Resource(library, 'css/bootstrap.css',
                          minified='css/bootstrap.min.css')
-bootstrap_responsive_css = Resource(library, 'css/bootstrap-responsive.css',
-                                    minified='css/bootstrap-responsive.min.css',
-                                    depends=[bootstrap_css, ],
-                                    dont_bundle=True)
+bootstrap_theme_css = Resource(library, 'css/bootstrap-theme.css',
+                               minified='css/bootstrap-theme.min.css',
+                               depends=[bootstrap_css, ],
+                               dont_bundle=True)
 bootstrap_js = Resource(library, 'js/bootstrap.js',
                         minified='js/bootstrap.min.js',
                         depends=[jquery, ])
